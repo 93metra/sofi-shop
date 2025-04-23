@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Tagesschrift';
+  src: url('../public/fonts/Tagesschrift-Regular.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yellowtail';
+  src: url('../public/fonts/Yellowtail-Regular.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --main-color: #423D2C;
+  --background-color: #F7E6CA;
+  --background-accent: #E8D59E;
+
+  --main-font: 'Tagesschrift', sans-serif;
+  --accent-font: 'Yellowtail', sans-serif;
+  --common-transition: all .2s ease-in-out;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--main-color);
+  font-family: sans-serif;
+  background: var(--background-color);
+  inline-size: 100vw;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
