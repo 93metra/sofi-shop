@@ -1,0 +1,54 @@
+.mainPage {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  inline-size: 80%;
+  block-size: 100vh;
+}
+
+.menu {
+  inline-size: 20%;
+}
+
+.gridCollage {
+  display: grid;
+  grid-template-columns: repeat(3, 150px); 
+  grid-template-rows: repeat(3, 150px); 
+  grid-template-areas:
+    "one one two"
+    "three four two"
+    "three five five";
+  grid-column: 2;
+  gap: 15px; 
+  inline-size: 60%;
+  block-size: 100%;
+}
+
+.gridCollage__item1 {
+  grid-area: one;
+}
+
+.gridCollage__item2 {
+  grid-area: two;
+}
+
+.gridCollage__item3 {
+  grid-area: three;
+}
+
+.gridCollage__item4 {
+  grid-area: four;
+}
+
+.gridCollage__item5 {
+  grid-area: five;
+}
+
+.gridCollage__img {
+  border: 2px solid var(--background-accent);
+  border-radius: 5px;
+  object-fit: cover; 
+  box-shadow: 0px 0px 3px var(--main-color);
+  inline-size: 100%; 
+  block-size: 100%; 
+}

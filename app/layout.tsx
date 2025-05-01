@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Mea_Culpa, } from "next/font/google";
 import "./globals.css";
+
+// Import the Mea Culpa font
+const meaCulpa = Mea_Culpa({
+  variable: "--font-mea-culpa",
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${meaCulpa.variable}`}>
         {children}
       </body>
     </html>
